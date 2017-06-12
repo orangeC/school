@@ -16,9 +16,9 @@ public partial class _Default : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            DataList1.DataSource = data.GetDataReader("select top 3 * from  Shoes order by  ShoesID  desc ");
+            DataList1.DataSource = data.GetDataReader("select top 3 * from  Book order by  ShoesID  desc ");
             DataList1.DataBind();
-            DataList2.DataSource = data.GetDataReader("select top 6 * from  Shoes   order by  ShoesClick  desc ");
+            DataList2.DataSource = data.GetDataReader("select top 6 * from  Book   order by  ShoesClick  desc ");
             DataList2.DataBind();
         }
     }
