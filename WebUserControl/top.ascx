@@ -27,10 +27,10 @@
     	<li><a href="Default.aspx">首页</a></li>
       
    <li><a href="NewsList.aspx">新闻资讯</a></li>
-        <li><a href="NewShoesList.aspx">最新图书</a></li>
+        <li><a href="NewBookList.aspx">最新图书</a></li>
        
-        <li><a href="HotShoesList.aspx">热门图书</a></li>
-        <li><a href="AllShoesList.aspx">所有图书</a></li>
+        <li><a href="HotBookList.aspx">热门图书</a></li>
+        <li><a href="AllBookList.aspx">所有图书</a></li>
                <li ><a href="liuyan.aspx">留言板</a></li>
      <li><a href="Search.aspx">图书搜索</a></li>
     </ul>

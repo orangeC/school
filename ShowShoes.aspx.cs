@@ -19,9 +19,9 @@ public partial class ShowShoes : System.Web.UI.Page
         if (!IsPostBack)
         {
             BinderReplay();
-            string sql = "select * from Shoes where ShoesID=" + Request.QueryString["id"].ToString();
+            string sql = "select * from Book where ShoesID=" + Request.QueryString["id"].ToString();
             getdata(sql);
-            data.RunSql("update Shoes set ShoesClick=ShoesClick+1 where ShoesID="+Request.QueryString["id"].ToString());
+            data.RunSql("update Book set ShoesClick=ShoesClick+1 where ShoesID="+Request.QueryString["id"].ToString());
         }
     }
     private void getdata(string sql)
@@ -33,7 +33,7 @@ public partial class ShowShoes : System.Web.UI.Page
             Label2.Text = dr["ShoesName"].ToString();
             Label4.Text = dr["ShoesPrice"].ToString();
             Label5.Text= dr["ShoesNum"].ToString();
-            DIV1.InnerHtml = dr["ShoesIntroduce"].ToString();
+            DIV1.InnerHtml = dr["BookIntroduce"].ToString();
             Label6.Text = dr["ShoesClick"].ToString();
             iGPhoto.ImageUrl = dr["ShoesPhoto"].ToString();
             Label3.Text = dr["ShoesTypeName"].ToString();

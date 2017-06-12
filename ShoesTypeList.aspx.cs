@@ -23,7 +23,7 @@ public partial class ShoesTypeList : System.Web.UI.Page
     private void gvbind()
     {
         string sqlstr = "";
-        sqlstr = "select  * from Shoes where  ShoesTypeId='"+Request.QueryString["id"].ToString()+"' order by ShoesID asc ";
+        sqlstr = "select  * from Book where  ShoesTypeId='"+Request.QueryString["id"].ToString()+"' order by ShoesID asc ";
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
         con.Open();

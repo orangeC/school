@@ -10,7 +10,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
 
-public partial class NewShoesList : System.Web.UI.Page
+public partial class NewBookList : System.Web.UI.Page
 {
     SqlHelper sqloperate = new SqlHelper();
     protected void Page_Load(object sender, EventArgs e)
@@ -24,7 +24,7 @@ public partial class NewShoesList : System.Web.UI.Page
     private void gvbind()
     {
         string sqlstr = "";
-        sqlstr = "select  * from Shoes order by ShoesID desc ";
+        sqlstr = "select  * from Book order by ShoesID desc ";
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
         con.Open();

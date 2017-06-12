@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="AllShoesList.aspx.cs" Inherits="AllShoesList" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="NewBookList.aspx.cs" Inherits="NewBookList" %>
 
 
 <%@ Register Src="WebUserControl/Left.ascx" TagName="Left" TagPrefix="uc1" %>
@@ -28,7 +28,7 @@ body {
      <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="218" valign="top" bgcolor="#F6F6F6" rowspan="1" style="height: 471px">
-      <table border="0" cellpadding="0" 
+  <table border="0" cellpadding="0" 
             cellspacing="0" style="width: 226px" >
       <tr>
         <td class="lefttt1" style="width: 299px; font-size: 18px; background-image: url(images/关键字条框.jpg); color: #ffffff; background-repeat: repeat-x; height: 28px;">
@@ -54,7 +54,7 @@ body {
         <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="19" style="height: 24px"><img src="images/aa-2_16.gif" width="19" height="24" alt="" /></td>
-            <td bgcolor="#D8D8D8" class="red" style="height: 24px">&nbsp;&nbsp;&nbsp;所有鞋展示</td>
+            <td bgcolor="#D8D8D8" class="red" style="height: 24px">&nbsp;&nbsp;&nbsp;最新鞋展示</td>
             <td width="7" style="height: 24px"><img src="images/index_23.gif" width="7" height="24" alt="" /></td>
           </tr>
         </table></td>
@@ -101,7 +101,7 @@ body {
                 </tr>
                 <tr>
                     <td style="width: 541px; height: 8px">
-                        <img src="images/middle_xwrd_bg3.gif" style="width: 745px; height: 5px" /></td>
+                        <img src="images/middle_xwrd_bg3.gif"  alt="" style="width: 745px; height: 5px" /></td>
                 </tr>
             </tbody>
         </table>
