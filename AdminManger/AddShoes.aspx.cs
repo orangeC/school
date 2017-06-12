@@ -41,7 +41,7 @@ public partial class AdminManger_AddShoes : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        data.RunSql("insert into Shoes (ShoesName,ShoesTypeID,ShoesTypeName,ShoesNum,ShoesPhoto,ShoesPrice,ShoesIntroduce,Suppliers)values('" + title.Text + "','" + DropDownList1.SelectedValue + "','" + DropDownList1.SelectedItem.Text + "','" + TextBox3.Text + "','" + pic.Text + "','" + TextBox2.Text + "','" + content1.Value + "','" + DropDownList3.SelectedItem.Text + "') ");
+        data.RunSql("insert into Book (ShoesName,ShoesTypeID,ShoesTypeName,ShoesNum,ShoesPhoto,ShoesPrice,BookIntroduce,Suppliers)values('" + title.Text + "','" + DropDownList1.SelectedValue + "','" + DropDownList1.SelectedItem.Text + "','" + TextBox3.Text + "','" + pic.Text + "','" + TextBox2.Text + "','" + content1.Value + "','" + DropDownList3.SelectedItem.Text + "') ");
         Alert.AlertAndRedirect("添加成功", "AddShoes.aspx");
     }
 }

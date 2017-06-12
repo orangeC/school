@@ -39,7 +39,7 @@ public partial class AdminManger_OrderChk : System.Web.UI.Page
             else
             {
 
-                data.RunSql("update  Shoes set ShoesNum=ShoesNum-'" + num + "' where ShoesID='" + Shoesid + "'");
+                data.RunSql("update  Book set ShoesNum=ShoesNum-'" + num + "' where ShoesID='" + Shoesid + "'");
                 data.RunSql("update tb_Order set OrderStite='已经发货' where Orderid='" + id + "'");
                 Alert.AlertAndRedirect("操作成功", "OrderManger.aspx");
 

@@ -28,7 +28,7 @@ public partial class AMCChaXun : System.Web.UI.Page
      
         string str = "";
         string sql = str;
-        sql = "select   * from [Shoes] where  1=1";
+        sql = "select   * from [Book] where  1=1";
 
         if (ShoesName != "")
         {
@@ -40,8 +40,8 @@ public partial class AMCChaXun : System.Web.UI.Page
         //使用PagedDataSource类实现DataList控件的分页功能
         PagedDataSource ps = new PagedDataSource();
         //获取数据集
-        DataSet ds = data.GetDs(sql, "Shoes");
-        ps.DataSource = ds.Tables["Shoes"].DefaultView;
+        DataSet ds = data.GetDs(sql, "Book");
+        ps.DataSource = ds.Tables["Book"].DefaultView;
         //是否可以分页
         ps.AllowPaging = true;
         //显示的数量
