@@ -8,7 +8,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-     <title>鞋搜索</title>
+     <title>图书搜索</title>
     <link href="css/css.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
@@ -53,7 +53,7 @@ body {
         <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="19" style="height: 24px"><img src="images/aa-2_16.gif" width="19" height="24" alt="" /></td>
-            <td bgcolor="#D8D8D8" class="red" style="height: 24px">&nbsp;&nbsp;&nbsp;&nbsp;鞋搜索</td>
+            <td bgcolor="#D8D8D8" class="red" style="height: 24px">&nbsp;&nbsp;&nbsp;&nbsp;图书搜索</td>
             <td width="7" style="height: 24px"><img src="images/index_23.gif" width="7" height="24" alt="" /></td>
           </tr>
         </table></td>
@@ -65,13 +65,13 @@ body {
             style="margin-top: 8px" width="98%">
             <tr bgcolor="#e7e7e7">
                 <td colspan="10" height="24" align="left">
-                    鞋名称：<asp:TextBox ID="txtName" runat="server" Style="border-right: #ffcc00 1px solid;
+                    图书名称：<asp:TextBox ID="txtName" runat="server" Style="border-right: #ffcc00 1px solid;
                         border-top: #ffcc00 1px solid; border-left: #ffcc00 1px solid; border-bottom: #ffcc00 1px solid"
                         Width="341px"></asp:TextBox></td>
             </tr>
             <tr bgcolor="#e7e7e7">
                 <td colspan="10" height="24" align="left">
-                    鞋类别：<asp:DropDownList ID="DropDownList1" runat="server" Width="213px">
+                    图书类别：<asp:DropDownList ID="DropDownList1" runat="server" Width="213px">
                     </asp:DropDownList></td>
             </tr>
             <tr bgcolor="#e7e7e7">

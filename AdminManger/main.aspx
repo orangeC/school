@@ -14,7 +14,7 @@
     <div>
     <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td><div style='float:left'> <img height="14" src="skin/images/frame/book1.gif" width="20" />&nbsp;欢迎使用品牌运动鞋销售网后台管理系统
+    <td><div style='float:left'> <img height="14" src="skin/images/frame/book1.gif" width="20" />&nbsp;网上书店后台管理系统
     </div>
       <div style='float:right;padding-right:8px;'>
         <!--  //保留接口  -->
@@ -39,7 +39,7 @@
   <tr bgcolor="#FFFFFF">
     <td height="32">
         系统名称：</td>
-    <td><u>品牌运动鞋销售网开发与设计</u></td>
+    <td><u>网上书店开发与设计</u></td>
   </tr>
 </table>
     </div>

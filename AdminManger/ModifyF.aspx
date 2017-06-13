@@ -45,7 +45,7 @@
   <table width="98%" border="0" cellspacing="0" cellpadding="0">
   <tr>
   <td align="center" style="height: 22px">
-      修改鞋信息</td>
+      修改图书信息</td>
  </tr>
 </table>
 </td>
@@ -56,13 +56,13 @@
             style="margin-top: 8px" width="98%">
             <tr bgcolor="#e7e7e7">
                 <td colspan="10" height="24">
-                    鞋名称：<asp:TextBox ID="title" runat="server" Style="border-right: #ffcc00 1px solid;
+                    图书名称：<asp:TextBox ID="title" runat="server" Style="border-right: #ffcc00 1px solid;
                         border-top: #ffcc00 1px solid; border-left: #ffcc00 1px solid; border-bottom: #ffcc00 1px solid"
                         Width="341px"></asp:TextBox></td>
             </tr>
             <tr bgcolor="#e7e7e7">
                 <td colspan="10" height="24">
-                    鞋类别：<asp:DropDownList ID="DropDownList1" runat="server" Width="213px">
+                    图书类别：<asp:DropDownList ID="DropDownList1" runat="server" Width="213px">
                     </asp:DropDownList></td>
             </tr>
             <tr bgcolor="#e7e7e7">
@@ -90,7 +90,7 @@
             
             <tr bgcolor="#e7e7e7">
                 <td align="center" colspan="10" height="24">
-                    鞋描述</td>
+                    图书描述</td>
             </tr>
             <tr bgcolor="#e7e7e7">
                 <td align="left" colspan="10" height="24">

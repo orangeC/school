@@ -16,7 +16,7 @@
   <table width="98%" border="0" cellspacing="0" cellpadding="0">
   <tr>
   <td align="center" style="height: 22px">
-      鞋信息管理</td>
+      图书信息管理</td>
  </tr>
 </table>
      <asp:Label ID="Label4" runat="server" ForeColor="Red" Text="Label"></asp:Label></td>
@@ -35,13 +35,13 @@
                             NextPageText="下一页" PageButtonCount="12" PreviousPageText="上一页" />
                         <RowStyle HorizontalAlign="Left" />
                         <Columns>
-                        <asp:TemplateField HeaderText="鞋名称">
+                        <asp:TemplateField HeaderText="图书名称">
                             <ItemTemplate>
                                 <asp:Label ID="ShoesName" runat="server" Text='<%# Bind("ShoesName") %>' Width="255px"></asp:Label>
                             </ItemTemplate>
                             <ItemStyle HorizontalAlign="Left" Width="100px" />
                         </asp:TemplateField>
-                          <asp:TemplateField HeaderText="鞋类别">
+                          <asp:TemplateField HeaderText="图书类别">
                             <ItemTemplate>
                                 <asp:Label ID="ShoesTypeName" runat="server" Text='<%# Bind("ShoesTypeName") %>' Width="130px"></asp:Label>
                             </ItemTemplate>

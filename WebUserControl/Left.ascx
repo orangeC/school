@@ -3,7 +3,7 @@
 
  <table width="218" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td class="leftmenutop">鞋类别</td>
+        <td class="leftmenutop">图书类别</td>
       </tr>
         <asp:Repeater ID="Repeater1" runat="server">
         <ItemTemplate>
@@ -20,7 +20,7 @@
     <table width="218" border="0" cellspacing="0" cellpadding="0">
    
       <tr>
-      <td style="height: 15px" class="leftmenutop" >鞋搜索</td>
+      <td style="height: 15px" class="leftmenutop" >图书搜索</td>
       </tr>
     
     
@@ -30,13 +30,13 @@
               style="margin-top: 8px" width="98%">
               <tr bgcolor="#e7e7e7">
                   <td align="left" colspan="10" height="24">
-                      鞋名称：<asp:TextBox ID="txtName" runat="server" Style="border-right: #ffcc00 1px solid;
+                      图书名称：<asp:TextBox ID="txtName" runat="server" Style="border-right: #ffcc00 1px solid;
                           border-top: #ffcc00 1px solid; border-left: #ffcc00 1px solid; border-bottom: #ffcc00 1px solid"
                           Width="100px"></asp:TextBox></td>
               </tr>
               <tr bgcolor="#e7e7e7">
                   <td align="left" colspan="10" height="24">
-                      鞋类别：<asp:DropDownList ID="DropDownList1" runat="server" Width="98px">
+                      图书类别：<asp:DropDownList ID="DropDownList1" runat="server" Width="98px">
                       </asp:DropDownList></td>
               </tr>
               <tr bgcolor="#e7e7e7">

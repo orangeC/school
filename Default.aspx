@@ -8,7 +8,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>品牌运动鞋销售网</title>
+<title>网上书店</title>
 
 <link href="css/css.css" rel="stylesheet" type="text/css" />
 

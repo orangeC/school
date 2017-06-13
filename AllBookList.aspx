@@ -9,7 +9,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-     <title>最新鞋展示</title>
+     <title>最新图书展示</title>
     <link href="css/css.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
@@ -54,7 +54,7 @@ body {
         <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="19" style="height: 24px"><img src="images/aa-2_16.gif" width="19" height="24" alt="" /></td>
-            <td bgcolor="#D8D8D8" class="red" style="height: 24px">&nbsp;&nbsp;&nbsp;所有鞋展示</td>
+            <td bgcolor="#D8D8D8" class="red" style="height: 24px">&nbsp;&nbsp;&nbsp;所有图书展示</td>
             <td width="7" style="height: 24px"><img src="images/index_23.gif" width="7" height="24" alt="" /></td>
           </tr>
         </table></td>

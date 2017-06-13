@@ -8,7 +8,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-     <title>鞋详细信息</title>
+     <title>图书详细信息</title>
     <link href="css/css.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">

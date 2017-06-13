@@ -16,7 +16,7 @@
   <table width="98%" border="0" cellspacing="0" cellpadding="0">
   <tr>
   <td align="center" style="height: 22px">
-      鞋类别信息管理</td>
+      图书类别信息管理</td>
  </tr>
 </table>
 </td>

@@ -10,7 +10,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-     <title>热门鞋展示</title>
+     <title>热门图书展示</title>
     <link href="css/css.css" rel="stylesheet" type="text/css" />
 
 <style type="text/css">

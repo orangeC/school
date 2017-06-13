@@ -16,7 +16,7 @@
   <table width="98%" border="0" cellspacing="0" cellpadding="0">
   <tr>
   <td align="center" style="height: 22px">
-      修改鞋类别</td>
+      修改图书类别</td>
  </tr>
 </table>
 </td>
@@ -27,7 +27,7 @@
             style="margin-top: 8px" width="98%">
             <tr bgcolor="#e7e7e7">
                 <td colspan="10" height="24">
-                    &nbsp;修改鞋类别</td>
+                    &nbsp;修改图书类别</td>
             </tr>
             <tr align="right" bgcolor="#eef4ea">
                 <td align="center" colspan="10" height="36">
