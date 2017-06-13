@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
-public partial class ShoesTypeList : System.Web.UI.Page
+public partial class BookTypeList : System.Web.UI.Page
 {
     SqlHelper sqloperate = new SqlHelper();
     protected void Page_Load(object sender, EventArgs e)
@@ -23,7 +23,7 @@ public partial class ShoesTypeList : System.Web.UI.Page
     private void gvbind()
     {
         string sqlstr = "";
-        sqlstr = "select  * from Book where  ShoesTypeId='"+Request.QueryString["id"].ToString()+"' order by ShoesID asc ";
+        sqlstr = "select  * from Book where  BookTypeId='"+Request.QueryString["id"].ToString()+"' order by BookID asc ";
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
         con.Open();

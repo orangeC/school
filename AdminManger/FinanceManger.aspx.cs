@@ -43,7 +43,7 @@ public partial class AdminManger_FinanceManger : System.Web.UI.Page
     {
         try
         {
-            string sqlstr = "select count(ShoesName) as TNum,sum(ShoesPrice) as TPrice from vb_OrderInfo where  MONTH( OrderDate) BETWEEN '" + DropDownList2.SelectedValue + "' and   '" + DropDownList3.SelectedValue + "'  and YEAR( OrderDate)='" + DropDownList1.SelectedValue + "'";
+            string sqlstr = "select count(BookName) as TNum,sum(BookPrice) as TPrice from vb_OrderInfo where  MONTH( OrderDate) BETWEEN '" + DropDownList2.SelectedValue + "' and   '" + DropDownList3.SelectedValue + "'  and YEAR( OrderDate)='" + DropDownList1.SelectedValue + "'";
             SqlDataAdapter myda = new SqlDataAdapter(sqlstr, sqlconn);
             DataSet myds = new DataSet();
             myda.Fill(myds, "vb_OrderInfo");
@@ -64,7 +64,7 @@ public partial class AdminManger_FinanceManger : System.Web.UI.Page
     {
         try
         {
-            string sqlstr = "select count(ShoesName) as TNum,sum(ShoesCostPrice) as TPrice from vb_OrderInfo where  MONTH( OrderDate) BETWEEN '" + DropDownList2.SelectedValue + "' and   '" + DropDownList3.SelectedValue + "'  and YEAR( OrderDate)='" + DropDownList1.SelectedValue + "'";
+            string sqlstr = "select count(BookName) as TNum,sum(BookCostPrice) as TPrice from vb_OrderInfo where  MONTH( OrderDate) BETWEEN '" + DropDownList2.SelectedValue + "' and   '" + DropDownList3.SelectedValue + "'  and YEAR( OrderDate)='" + DropDownList1.SelectedValue + "'";
             SqlDataAdapter myda = new SqlDataAdapter(sqlstr, sqlconn);
             DataSet myds = new DataSet();
             myda.Fill(myds, "vb_OrderInfo");

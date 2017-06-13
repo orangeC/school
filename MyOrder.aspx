@@ -78,13 +78,13 @@ body {
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="商品名称">
                     <ItemTemplate>
-                        <asp:Label ID="Label2" runat="server" Text='<%# Bind("ShoesName") %>' Width="102px"></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text='<%# Bind("BookName") %>' Width="102px"></asp:Label>
                     </ItemTemplate>
                     <HeaderStyle Width="90px" />
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="商品价格">
                     <ItemTemplate>
-                        <asp:Label ID="Label4" runat="server" Text='<%# Bind("ShoesPrice") %>' Width="57px"></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Text='<%# Bind("BookPrice") %>' Width="57px"></asp:Label>
                     </ItemTemplate>
                     <HeaderStyle Width="90px" />
                 </asp:TemplateField>

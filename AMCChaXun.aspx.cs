@@ -24,15 +24,15 @@ public partial class AMCChaXun : System.Web.UI.Page
     }
     protected void bind()
     {
-        string ShoesName = Request.QueryString["ShoesName"].ToString();
+        string BookName = Request.QueryString["BookName"].ToString();
      
         string str = "";
         string sql = str;
         sql = "select   * from [Book] where  1=1";
 
-        if (ShoesName != "")
+        if (BookName != "")
         {
-            sql += " and   ShoesName   like   '%" + ShoesName + "%'   ";
+            sql += " and   BookName   like   '%" + BookName + "%'   ";
         }
        
         //取得当前页的页码
@@ -70,7 +70,7 @@ public partial class AMCChaXun : System.Web.UI.Page
         this.labBackPage.Text = Convert.ToString(ps.PageCount);
         //绑定DataList控件
         this.DataList2.DataSource = ps;
-        this.DataList2.DataKeyField = "ShoesID";
+        this.DataList2.DataKeyField = "BookID";
         this.DataList2.DataBind();
 
     }

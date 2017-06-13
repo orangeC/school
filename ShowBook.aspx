@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ShowShoes.aspx.cs" Inherits="ShowShoes" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ShowBook.aspx.cs" Inherits="ShowBook" %>
 
 <%@ Register Src="WebUserControl/Left.ascx" TagName="Left" TagPrefix="uc1" %>
 

@@ -49,7 +49,7 @@ public partial class AdminManger_EditOrder : System.Web.UI.Page
             DataSet mydsname = new DataSet();
             mydaname.Fill(mydsname, "vb_OrderInfo");
             DataRowView mydrvname = mydsname.Tables["vb_OrderInfo"].DefaultView[0];
-            string sqlstr = "select sum(shuliang) as TNum,sum(ShoesPrice*shuliang) as TPrice from vb_OrderInfo where OrderID='"
+            string sqlstr = "select sum(shuliang) as TNum,sum(BookPrice*shuliang) as TPrice from vb_OrderInfo where OrderID='"
                 + Convert.ToString(mydrvname.Row["OrderID"]) + "'";
             SqlDataAdapter myda = new SqlDataAdapter(sqlstr, sqlconn);
             DataSet myds = new DataSet();

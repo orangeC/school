@@ -10,7 +10,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.IO;
 using System.Data.SqlClient;
-public partial class ShowShoes : System.Web.UI.Page
+public partial class ShowBook : System.Web.UI.Page
 {
     SqlHelper data = new SqlHelper();
     SqlConnection sqlconn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
@@ -19,9 +19,9 @@ public partial class ShowShoes : System.Web.UI.Page
         if (!IsPostBack)
         {
             BinderReplay();
-            string sql = "select * from Book where ShoesID=" + Request.QueryString["id"].ToString();
+            string sql = "select * from Book where BookID=" + Request.QueryString["id"].ToString();
             getdata(sql);
-            data.RunSql("update Book set ShoesClick=ShoesClick+1 where ShoesID="+Request.QueryString["id"].ToString());
+            data.RunSql("update Book set BookClick=BookClick+1 where BookID="+Request.QueryString["id"].ToString());
         }
     }
     private void getdata(string sql)
@@ -29,16 +29,16 @@ public partial class ShowShoes : System.Web.UI.Page
         SqlDataReader dr = data.GetDataReader(sql);
         if (dr.Read())
         {
-            Label1.Text = dr["ShoesName"].ToString();
-            Label2.Text = dr["ShoesName"].ToString();
-            Label4.Text = dr["ShoesPrice"].ToString();
-            Label5.Text= dr["ShoesNum"].ToString();
+            Label1.Text = dr["BookName"].ToString();
+            Label2.Text = dr["BookName"].ToString();
+            Label4.Text = dr["BookPrice"].ToString();
+            Label5.Text= dr["BookNum"].ToString();
             DIV1.InnerHtml = dr["BookIntroduce"].ToString();
-            Label6.Text = dr["ShoesClick"].ToString();
-            iGPhoto.ImageUrl = dr["ShoesPhoto"].ToString();
-            Label3.Text = dr["ShoesTypeName"].ToString();
+            Label6.Text = dr["BookClick"].ToString();
+            iGPhoto.ImageUrl = dr["BookPhoto"].ToString();
+            Label3.Text = dr["BookTypeName"].ToString();
        
-            Hidden1.Value = dr["ShoesTypeID"].ToString();
+            Hidden1.Value = dr["BookTypeID"].ToString();
         }
 
     }
@@ -54,7 +54,7 @@ public partial class ShowShoes : System.Web.UI.Page
         catch(Exception ex)
         {
             //弹出窗口并跳转到指定的页面
-            Alert.AlertAndRedirect(ex.Message,"ShowShoes.aspx?id="+Request.QueryString["id"]);
+            Alert.AlertAndRedirect(ex.Message,"ShowBook.aspx?id="+Request.QueryString["id"]);
         }
         if (store < num)
         {
@@ -91,9 +91,9 @@ public partial class ShowShoes : System.Web.UI.Page
                     data.RunSql(sqlOrder);
                 }
                 sqlconn.Open();
-                string strid = Page.Request.QueryString["ShoesID"];
+                string strid = Page.Request.QueryString["BookID"];
                 string sqlstr = "insert into tb_OrderInfo"
-                    + "(OrderID,OrderMember,ShoesID,ShoesName,ShoesTypeID,ShoesTypeName,ShoesPrice,IsCheckout,shuliang,Yanse,chiMa)"
+                    + "(OrderID,OrderMember,BookID,BookName,BookTypeID,BookTypeName,BookPrice,IsCheckout,shuliang,Yanse,chiMa)"
                     + " values('" + Orderid + "','" + Session["users"].ToString() + "','" + Request.QueryString["id"].ToString() + "','"
                     + Label2.Text + "','" + Hidden1.Value + "','" + Label3.Text + "','" + Label4.Text + "','否','" + TextBox1.Text + "','"
                     + DropDownList1.Text + "','"
@@ -106,7 +106,7 @@ public partial class ShowShoes : System.Web.UI.Page
     private void BinderReplay()
     {
         int id = int.Parse(Request.QueryString["id"].ToString());
-        string sql = "select * from  Comment where ShoesId=" + id;
+        string sql = "select * from  Comment where BookId=" + id;
         SqlConnection con = new SqlConnection(SqlHelper.connstring);
         con.Open();
         SqlDataAdapter sda = new SqlDataAdapter(sql, con);
@@ -156,9 +156,9 @@ public partial class ShowShoes : System.Web.UI.Page
         else
         {
 
-            data.RunSql("insert into  Comment(UserId,UserName,ShoesId,Titles)values('" + Session["usersid"].ToString() + "','" + Session["users"].ToString() + "','" + id + "','" + TextBox2.Text + "')");
+            data.RunSql("insert into  Comment(UserId,UserName,BookId,Titles)values('" + Session["usersid"].ToString() + "','" + Session["users"].ToString() + "','" + id + "','" + TextBox2.Text + "')");
             BinderReplay();
-            Alert.AlertAndRedirect("评论成功", "ShowShoes.aspx?id=" + id);
+            Alert.AlertAndRedirect("评论成功", "ShowBook.aspx?id=" + id);
         }
     }
     

@@ -19,7 +19,7 @@ public partial class Search : System.Web.UI.Page
         if (!IsPostBack)
         {
 
-            DropDownList1.DataSource = data.GetDataReader("select * from Shoestype ");
+            DropDownList1.DataSource = data.GetDataReader("select * from Booktype ");
             DropDownList1.DataTextField = "Name";
             DropDownList1.DataValueField = "id";
             DropDownList1.DataBind();
@@ -31,6 +31,6 @@ public partial class Search : System.Web.UI.Page
  
     protected void Button1_Click(object sender, EventArgs e)
     {
-        Response.Redirect("ChaXunJieGuo.aspx?ShoesName=" + txtName.Text + "&&ShoesTypeName=" + DropDownList1.SelectedItem.Text + "&ShoesMoney1=" + ShoesMoney1.Text + "&ShoesMoney2=" + ShoesMoney2.Text);
+        Response.Redirect("ChaXunJieGuo.aspx?BookName=" + txtName.Text + "&&BookTypeName=" + DropDownList1.SelectedItem.Text + "&BookMoney1=" + BookMoney1.Text + "&BookMoney2=" + BookMoney2.Text);
     }
 }

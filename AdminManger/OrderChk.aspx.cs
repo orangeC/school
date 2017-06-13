@@ -30,7 +30,7 @@ public partial class AdminManger_OrderChk : System.Web.UI.Page
             sd.Read();
             OrderStite = sd["OrderStite"].ToString();
             int num =Convert.ToInt32( dr["shuliang"].ToString());
-            string Shoesid = dr["ShoesID"].ToString();
+            string Bookid = dr["BookID"].ToString();
             if (OrderStite == "已经发货")
             {
                 Alert.AlertAndRedirect("该订单已经发货", "OrderManger.aspx");
@@ -39,7 +39,7 @@ public partial class AdminManger_OrderChk : System.Web.UI.Page
             else
             {
 
-                data.RunSql("update  Book set ShoesNum=ShoesNum-'" + num + "' where ShoesID='" + Shoesid + "'");
+                data.RunSql("update  Book set BookNum=BookNum-'" + num + "' where BookID='" + Bookid + "'");
                 data.RunSql("update tb_Order set OrderStite='已经发货' where Orderid='" + id + "'");
                 Alert.AlertAndRedirect("操作成功", "OrderManger.aspx");
 

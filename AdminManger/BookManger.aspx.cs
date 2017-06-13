@@ -10,7 +10,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
 using System.IO;
-public partial class AdminManger_ShoesManger : System.Web.UI.Page
+public partial class AdminManger_BookManger : System.Web.UI.Page
 {
     SqlHelper data = new SqlHelper();
     Alert js = new Alert();
@@ -28,7 +28,7 @@ public partial class AdminManger_ShoesManger : System.Web.UI.Page
         string ID = gvInfo.DataKeys[e.RowIndex].Values[0].ToString();
         try
         {
-            mydata.RunSql("delete  from Book  where  ShoesID='" + ID + "'");
+            mydata.RunSql("delete  from Book  where  BookID='" + ID + "'");
 
             Label4.Text = "删除成功！";
             gvInfo.EditIndex = -1;

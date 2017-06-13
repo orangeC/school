@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ShoesManger.aspx.cs" Inherits="AdminManger_ShoesManger" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="BookManger.aspx.cs" Inherits="AdminManger_BookManger" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -28,7 +28,7 @@
             <tr align="right" bgcolor="#eef4ea">
                 <td align="left" colspan="10" height="36">
                     <asp:GridView ID="gvInfo" runat="server" AllowPaging="True" AutoGenerateColumns="False"
-                        BackColor="White" CellPadding="5" DataKeyNames="ShoesID" OnPageIndexChanging="gvInfo_PageIndexChanging"
+                        BackColor="White" CellPadding="5" DataKeyNames="BookID" OnPageIndexChanging="gvInfo_PageIndexChanging"
                         OnRowDataBound="gvInfo_RowDataBound" OnRowDeleting="gvInfo_RowDeleting" PageSize="17"
                         Width="100%">
                         <PagerSettings FirstPageText="首页" LastPageText="尾页" Mode="NextPreviousFirstLast"
@@ -37,25 +37,25 @@
                         <Columns>
                         <asp:TemplateField HeaderText="图书名称">
                             <ItemTemplate>
-                                <asp:Label ID="ShoesName" runat="server" Text='<%# Bind("ShoesName") %>' Width="255px"></asp:Label>
+                                <asp:Label ID="BookName" runat="server" Text='<%# Bind("BookName") %>' Width="255px"></asp:Label>
                             </ItemTemplate>
                             <ItemStyle HorizontalAlign="Left" Width="100px" />
                         </asp:TemplateField>
                           <asp:TemplateField HeaderText="图书类别">
                             <ItemTemplate>
-                                <asp:Label ID="ShoesTypeName" runat="server" Text='<%# Bind("ShoesTypeName") %>' Width="130px"></asp:Label>
+                                <asp:Label ID="BookTypeName" runat="server" Text='<%# Bind("BookTypeName") %>' Width="130px"></asp:Label>
                             </ItemTemplate>
                             <ItemStyle HorizontalAlign="Left" Width="100px" />
                         </asp:TemplateField>
                           <asp:TemplateField HeaderText="销售单价">
                             <ItemTemplate>
-                                <asp:Label ID="ShoesPrice" runat="server" Text='<%# Bind("ShoesPrice") %>' Width="130px"></asp:Label>
+                                <asp:Label ID="BookPrice" runat="server" Text='<%# Bind("BookPrice") %>' Width="130px"></asp:Label>
                             </ItemTemplate>
                             <ItemStyle HorizontalAlign="Left" Width="100px" />
                         </asp:TemplateField>
                           <asp:TemplateField HeaderText="库存数量">
                             <ItemTemplate>
-                                <asp:Label ID="ShoesNum" runat="server" Text='<%# Bind("ShoesNum") %>' Width="130px"></asp:Label>
+                                <asp:Label ID="BookNum" runat="server" Text='<%# Bind("BookNum") %>' Width="130px"></asp:Label>
                             </ItemTemplate>
                             <ItemStyle HorizontalAlign="Left" Width="100px" />
                         </asp:TemplateField>
@@ -67,14 +67,14 @@
                         </asp:TemplateField>
                         <asp:TemplateField HeaderText="发布日期" SortExpression="num">
                             <ItemTemplate>
-                                <asp:Label ID="ShoesDate" runat="server" Text='<%# Bind("ShoesDate","{0:d}") %>' Width="130px"></asp:Label>
+                                <asp:Label ID="BookDate" runat="server" Text='<%# Bind("BookDate","{0:d}") %>' Width="130px"></asp:Label>
                             </ItemTemplate>
                             <ItemStyle HorizontalAlign="Center" Width="30px" />
                         </asp:TemplateField>
                         
                         <asp:TemplateField HeaderText="修改">
                             <ItemTemplate>
-                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "ModifyF.aspx?id="+Eval("ShoesID") %>'
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "ModifyF.aspx?id="+Eval("BookID") %>'
                                     Text="修改"></asp:HyperLink>
                             </ItemTemplate>
                             <ItemStyle HorizontalAlign="Center" Width="50px" />

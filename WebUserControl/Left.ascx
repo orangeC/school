@@ -8,7 +8,7 @@
         <asp:Repeater ID="Repeater1" runat="server">
         <ItemTemplate>
         <tr>
-        <td class="leftmenuli"><a href='ShoesTypeList.aspx?id=<%#Eval("id")%>'><span class="red">&nbsp;<%#Eval("Name")%></span></a></td>
+        <td class="leftmenuli"><a href='BookTypeList.aspx?id=<%#Eval("id")%>'><span class="red">&nbsp;<%#Eval("Name")%></span></a></td>
       </tr>
         </ItemTemplate>
         </asp:Repeater>
@@ -41,8 +41,8 @@
               </tr>
               <tr bgcolor="#e7e7e7">
                   <td align="left" colspan="10" style="height: 24px">
-                      销售单价：从<asp:TextBox ID="ShoesMoney1" runat="server" Width="90px"></asp:TextBox><br />
-                      销售单价到：<asp:TextBox ID="ShoesMoney2" runat="server" Width="87px"></asp:TextBox><br />
+                      销售单价：从<asp:TextBox ID="BookMoney1" runat="server" Width="90px"></asp:TextBox><br />
+                      销售单价到：<asp:TextBox ID="BookMoney2" runat="server" Width="87px"></asp:TextBox><br />
                       输入价格范围</td>
               </tr>
               <tr bgcolor="#e7e7e7">

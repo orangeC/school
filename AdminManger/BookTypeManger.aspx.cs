@@ -10,7 +10,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
 
-public partial class Admin_ShoesTypeManger : System.Web.UI.Page
+public partial class Admin_BookTypeManger : System.Web.UI.Page
 {
 
     SqlHelper data = new SqlHelper();
@@ -29,7 +29,7 @@ public partial class Admin_ShoesTypeManger : System.Web.UI.Page
         string ID = gvInfo.DataKeys[e.RowIndex].Values[0].ToString();
         try
         {
-            mydata.RunSql("delete  from Shoestype  where  id='" + ID + "'");
+            mydata.RunSql("delete  from Booktype  where  id='" + ID + "'");
 
             Label4.Text = "删除成功！";
             gvInfo.EditIndex = -1;
@@ -91,7 +91,7 @@ public partial class Admin_ShoesTypeManger : System.Web.UI.Page
             strTop = "top " + iCount.ToString();
         }
 
-        string sql = "select  " + strTop + "  * from [Shoestype] ";
+        string sql = "select  " + strTop + "  * from [Booktype] ";
         SqlConnection con = new SqlConnection(SqlHelper.connstring);
         SqlCommand cmd = new SqlCommand(sql, con);
 
@@ -120,8 +120,8 @@ public partial class Admin_ShoesTypeManger : System.Web.UI.Page
     }
     protected void btnAdd_Click(object sender, EventArgs e)
     {
-        data.RunSql("insert into Shoestype(name)values('" + txtname.Text + "')");
-        Alert.AlertAndRedirect("添加成功", "ShoesTypeManger.aspx");
+        data.RunSql("insert into Booktype(name)values('" + txtname.Text + "')");
+        Alert.AlertAndRedirect("添加成功", "BookTypeManger.aspx");
 
     }
 }

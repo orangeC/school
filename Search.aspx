@@ -76,8 +76,8 @@ body {
             </tr>
             <tr bgcolor="#e7e7e7">
                 <td colspan="10" style="height: 24px" align="left">
-                    销售单价：<asp:TextBox ID="ShoesMoney1" runat="server" Width="136px"></asp:TextBox>到<asp:TextBox
-                        ID="ShoesMoney2" runat="server" Width="136px"></asp:TextBox>输入价格范围</td>
+                    销售单价：<asp:TextBox ID="BookMoney1" runat="server" Width="136px"></asp:TextBox>到<asp:TextBox
+                        ID="BookMoney2" runat="server" Width="136px"></asp:TextBox>输入价格范围</td>
             </tr>
             <tr bgcolor="#e7e7e7">
                 <td align="left" colspan="10" height="24">

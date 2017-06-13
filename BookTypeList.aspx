@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ShoesTypeList.aspx.cs" Inherits="ShoesTypeList" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="BookTypeList.aspx.cs" Inherits="BookTypeList" %>
 
 <%@ Register Src="WebUserControl/Left.ascx" TagName="Left" TagPrefix="uc1" %>
 
@@ -71,13 +71,13 @@ body {
                                 <table>
                                     <tr>
                                         <td>
-                                            <a class="highlightit" href='ShowShoes.aspx?id=<%#Eval("ShoesID") %>'>
-                                                <img alt="" border="0" src='<%#Eval("ShoesPhoto")%>' style="width: 223px; height: 151px" /></a></td>
+                                            <a class="highlightit" href='ShowBook.aspx?id=<%#Eval("BookID") %>'>
+                                                <img alt="" border="0" src='<%#Eval("BookPhoto")%>' style="width: 223px; height: 151px" /></a></td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href='ShowShoes.aspx?id=<%#Eval("ShoesID") %>'>
-                                                <%#Eval("ShoesName")%>
+                                            <a href='ShowBook.aspx?id=<%#Eval("BookID") %>'>
+                                                <%#Eval("BookName")%>
                                             </a>
                                         </td>
                                     </tr>

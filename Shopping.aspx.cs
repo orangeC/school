@@ -139,7 +139,7 @@ public partial class Shopping : System.Web.UI.Page
     }
     private void BinderOrder()
     {
-        string sqlstr = "select id,shuliang,OrderID,ShoesName,ShoesTypeName,ShoesPrice from tb_OrderInfo where OrderMember='" + Convert.ToString(Session["users"]) + "' and IsCheckout='否'";
+        string sqlstr = "select id,shuliang,OrderID,BookName,BookTypeName,BookPrice from tb_OrderInfo where OrderMember='" + Convert.ToString(Session["users"]) + "' and IsCheckout='否'";
         gvOrderInfo.DataKeyNames = new string[] { "id" };
         gvDataBind(gvOrderInfo, sqlstr);
 
@@ -149,7 +149,7 @@ public partial class Shopping : System.Web.UI.Page
         if (dr1.Read())
         {
 
-            string sqlstrtprice = "select sum(ShoesPrice*shuliang) as tprice from tb_OrderInfo"
+            string sqlstrtprice = "select sum(BookPrice*shuliang) as tprice from tb_OrderInfo"
                 + " where OrderMember='" + Convert.ToString(Session["users"]) + "' and IsCheckout='否'";
 
             SqlDataReader dr;

@@ -22,11 +22,11 @@ public partial class AdminManger_ModifyF : System.Web.UI.Page
             DropDownList3.DataTextField = "SName";
             DropDownList3.DataValueField = "id";
             DropDownList3.DataBind();
-            DropDownList1.DataSource = data.GetDataReader("select * from Shoestype");
+            DropDownList1.DataSource = data.GetDataReader("select * from Booktype");
             DropDownList1.DataValueField = "id";
             DropDownList1.DataTextField = "name";
             DropDownList1.DataBind();
-         string   sql = "select * from Book where ShoesID=" + Request.QueryString["id"].ToString();
+         string   sql = "select * from Book where BookID=" + Request.QueryString["id"].ToString();
             getdata(sql);
         }
     }
@@ -35,15 +35,15 @@ public partial class AdminManger_ModifyF : System.Web.UI.Page
         SqlDataReader dr = data.GetDataReader(sql);
         if (dr.Read())
         {
-            title.Text = dr["ShoesName"].ToString();
-            TextBox2.Text = dr["ShoesPrice"].ToString();
-            TextBox3.Text = dr["ShoesNum"].ToString();
+            title.Text = dr["BookName"].ToString();
+            TextBox2.Text = dr["BookPrice"].ToString();
+            TextBox3.Text = dr["BookNum"].ToString();
 
             content1.Value = dr["BookIntroduce"].ToString();
-            pic.Text = dr["ShoesPhoto"].ToString();
-            Image1.ImageUrl = "../" + dr["ShoesPhoto"].ToString();
-            DropDownList1.Items.FindByValue(dr["ShoesTypeID"].ToString()).Selected = true;
-            DropDownList1.Items.FindByText(dr["ShoesTypeName"].ToString()).Selected = true;
+            pic.Text = dr["BookPhoto"].ToString();
+            Image1.ImageUrl = "../" + dr["BookPhoto"].ToString();
+            DropDownList1.Items.FindByValue(dr["BookTypeID"].ToString()).Selected = true;
+            DropDownList1.Items.FindByText(dr["BookTypeName"].ToString()).Selected = true;
             DropDownList3.Items.FindByText(dr["Suppliers"].ToString()).Selected = true;
          
 
@@ -62,8 +62,8 @@ public partial class AdminManger_ModifyF : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        string sql = "update Book set ShoesName='" + title.Text.ToString().Trim() + "',ShoesPrice='" + TextBox2.Text + "',ShoesNum='" + TextBox3.Text + "',BookIntroduce='" + content1.Value + "' ,ShoesPhoto='" + pic.Text + "',ShoesTypeID='" + DropDownList1.SelectedValue + "',ShoesTypeName='" + DropDownList1.SelectedItem.Text + "'  where ShoesID=" + Request.QueryString["id"].ToString();
+        string sql = "update Book set BookName='" + title.Text.ToString().Trim() + "',BookPrice='" + TextBox2.Text + "',BookNum='" + TextBox3.Text + "',BookIntroduce='" + content1.Value + "' ,BookPhoto='" + pic.Text + "',BookTypeID='" + DropDownList1.SelectedValue + "',BookTypeName='" + DropDownList1.SelectedItem.Text + "'  where BookID=" + Request.QueryString["id"].ToString();
         data.RunSql(sql);
-        Alert.AlertAndRedirect("修改成功", "ShoesManger.aspx");
+        Alert.AlertAndRedirect("修改成功", "BookManger.aspx");
     }
 }

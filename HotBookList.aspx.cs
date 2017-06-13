@@ -24,7 +24,7 @@ public partial class HotBookList : System.Web.UI.Page
     private void gvbind()
     {
         string sqlstr = "";
-        sqlstr = "select  * from Book order by ShoesClick desc ";
+        sqlstr = "select  * from Book order by BookClick desc ";
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
         con.Open();

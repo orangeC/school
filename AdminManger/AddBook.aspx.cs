@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.IO;
-public partial class AdminManger_AddShoes : System.Web.UI.Page
+public partial class AdminManger_AddBook : System.Web.UI.Page
 {
     SqlHelper data = new SqlHelper();
    
@@ -22,7 +22,7 @@ public partial class AdminManger_AddShoes : System.Web.UI.Page
             DropDownList3.DataValueField = "id";
             DropDownList3.DataBind();
 
-            DropDownList1.DataSource = data.GetDataReader("select * from Shoestype");
+            DropDownList1.DataSource = data.GetDataReader("select * from Booktype");
             DropDownList1.DataValueField = "id";
             DropDownList1.DataTextField = "name";
             DropDownList1.DataBind();
@@ -41,7 +41,7 @@ public partial class AdminManger_AddShoes : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        data.RunSql("insert into Book (ShoesName,ShoesTypeID,ShoesTypeName,ShoesNum,ShoesPhoto,ShoesPrice,BookIntroduce,Suppliers)values('" + title.Text + "','" + DropDownList1.SelectedValue + "','" + DropDownList1.SelectedItem.Text + "','" + TextBox3.Text + "','" + pic.Text + "','" + TextBox2.Text + "','" + content1.Value + "','" + DropDownList3.SelectedItem.Text + "') ");
-        Alert.AlertAndRedirect("添加成功", "AddShoes.aspx");
+        data.RunSql("insert into Book (BookName,BookTypeID,BookTypeName,BookNum,BookPhoto,BookPrice,BookIntroduce,Suppliers)values('" + title.Text + "','" + DropDownList1.SelectedValue + "','" + DropDownList1.SelectedItem.Text + "','" + TextBox3.Text + "','" + pic.Text + "','" + TextBox2.Text + "','" + content1.Value + "','" + DropDownList3.SelectedItem.Text + "') ");
+        Alert.AlertAndRedirect("添加成功", "AddBook.aspx");
     }
 }

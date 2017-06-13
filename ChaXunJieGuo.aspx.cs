@@ -24,25 +24,25 @@ public partial class ChaXunJieGuo : System.Web.UI.Page
     }
     protected void bind()
     {
-        string ShoesName = Request.QueryString["ShoesName"].ToString();
-        string ShoesTypeName = Request.QueryString["ShoesTypeName"].ToString();
-        string ShoesMoney1 = Request.QueryString["ShoesMoney1"].ToString();
-        string ShoesMoney2 = Request.QueryString["ShoesMoney2"].ToString();
+        string BookName = Request.QueryString["BookName"].ToString();
+        string BookTypeName = Request.QueryString["BookTypeName"].ToString();
+        string BookMoney1 = Request.QueryString["BookMoney1"].ToString();
+        string BookMoney2 = Request.QueryString["BookMoney2"].ToString();
         string str = "";
         string sql = str;
         sql = "select   * from [Book] where  1=1";
 
-        if (ShoesName != "")
+        if (BookName != "")
         {
-            sql += " and   ShoesName   like   '%" + ShoesName + "%'   ";
+            sql += " and   BookName   like   '%" + BookName + "%'   ";
         }
-        if (ShoesTypeName != "所有类别")
+        if (BookTypeName != "所有类别")
         {
-            sql += " and   ShoesTypeName   like   '%" + ShoesTypeName + "%'   ";
+            sql += " and   BookTypeName   like   '%" + BookTypeName + "%'   ";
         }
-        if (ShoesMoney1 != "" && ShoesMoney2 != "")
+        if (BookMoney1 != "" && BookMoney2 != "")
         {
-            sql += " and   ShoesPrice   between  '" + ShoesMoney1 + "' and '" + ShoesMoney2 + "'  ";
+            sql += " and   BookPrice   between  '" + BookMoney1 + "' and '" + BookMoney2 + "'  ";
         }
         //取得当前页的页码
         int curpage = Convert.ToInt32(this.labPage.Text);
@@ -79,7 +79,7 @@ public partial class ChaXunJieGuo : System.Web.UI.Page
         this.labBackPage.Text = Convert.ToString(ps.PageCount);
         //绑定DataList控件
         this.DataList2.DataSource = ps;
-        this.DataList2.DataKeyField = "ShoesID";
+        this.DataList2.DataKeyField = "BookID";
         this.DataList2.DataBind();
 
     }

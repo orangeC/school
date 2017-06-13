@@ -24,7 +24,7 @@ public partial class AllBookList : System.Web.UI.Page
     private void gvbind()
     {
         string sqlstr = "";
-        sqlstr = "select  * from Book order by ShoesID asc ";
+        sqlstr = "select  * from Book order by BookID asc ";
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
         con.Open();

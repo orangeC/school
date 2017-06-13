@@ -88,17 +88,17 @@ body {
                         <Columns>
                             <asp:TemplateField HeaderText="名称">
                                 <ItemTemplate>
-                                    <asp:Label ID="Label2" runat="server" Text='<%# Bind("ShoesName") %>'></asp:Label>
+                                    <asp:Label ID="Label2" runat="server" Text='<%# Bind("BookName") %>'></asp:Label>
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="类别">
                                 <ItemTemplate>
-                                    <asp:Label ID="Label3" runat="server" Text='<%# Bind("ShoesTypeName") %>'></asp:Label>
+                                    <asp:Label ID="Label3" runat="server" Text='<%# Bind("BookTypeName") %>'></asp:Label>
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="价格">
                                 <ItemTemplate>
-                                    <asp:Label ID="Label4" runat="server" Text='<%# Bind("ShoesPrice") %>'></asp:Label>
+                                    <asp:Label ID="Label4" runat="server" Text='<%# Bind("BookPrice") %>'></asp:Label>
                                 </ItemTemplate>
                             </asp:TemplateField>
                             <asp:TemplateField HeaderText="数量">

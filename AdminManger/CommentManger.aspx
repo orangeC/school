@@ -50,7 +50,7 @@
                           
                    <asp:TemplateField HeaderText="查看评论图书">
                             <ItemTemplate>
-                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "ModifyF.aspx?id="+Eval("ShoesId") %>'
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "ModifyF.aspx?id="+Eval("BookId") %>'
                                     Text="查看评论图书"></asp:HyperLink>
                             </ItemTemplate>
                             <ItemStyle HorizontalAlign="Center" Width="50px" />

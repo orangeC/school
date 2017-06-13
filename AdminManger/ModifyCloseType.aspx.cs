@@ -17,7 +17,7 @@ public partial class Admin_ModifyCloseType : System.Web.UI.Page
         {
             SqlConnection con = new SqlConnection(SqlHelper.connstring);
             con.Open();
-            SqlCommand cmd = new SqlCommand("select  * from Shoestype where id='" + Request.QueryString["id"].ToString() + "'", con);//从数据库中选择数据
+            SqlCommand cmd = new SqlCommand("select  * from Booktype where id='" + Request.QueryString["id"].ToString() + "'", con);//从数据库中选择数据
             cmd.Parameters.Add("@name", SqlDbType.VarChar);
 
             cmd.Parameters["@name"].Value = txtname.Text;
@@ -37,7 +37,7 @@ public partial class Admin_ModifyCloseType : System.Web.UI.Page
         con.Open();
         SqlCommand cmd = new SqlCommand();
         cmd.Connection = (SqlConnection)con;
-        cmd.CommandText = "update   Shoestype set  name=@name  where id=@id";
+        cmd.CommandText = "update   Booktype set  name=@name  where id=@id";
 
         cmd.Parameters.Add("@name", SqlDbType.VarChar);
         cmd.Parameters.Add("@id", SqlDbType.Int);
@@ -47,6 +47,6 @@ public partial class Admin_ModifyCloseType : System.Web.UI.Page
 
         cmd.ExecuteNonQuery();
         con.Close();
-        Response.Write("<script language='javascript'>alert('修改成功');location.href='ShoesTypeManger.aspx'</script>");
+        Response.Write("<script language='javascript'>alert('修改成功');location.href='BookTypeManger.aspx'</script>");
     }
 }

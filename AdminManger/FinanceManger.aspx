@@ -75,8 +75,8 @@
                         <Columns>
                             <asp:BoundField DataField="OrderID" HeaderText="订单编号" />
                             <asp:BoundField DataField="OrderMember" HeaderText="订货人" />
-                            <asp:BoundField DataField="ShoesName" HeaderText="商品名称" />
-                            <asp:BoundField DataField="ShoesPrice" HeaderText="商品价格" />
+                            <asp:BoundField DataField="BookName" HeaderText="商品名称" />
+                            <asp:BoundField DataField="BookPrice" HeaderText="商品价格" />
                             <asp:BoundField DataField="OrderDate" HeaderText="订单日期" />
                             <asp:BoundField DataField="OrderStite" HeaderText="订单状态" />
                         </Columns>
