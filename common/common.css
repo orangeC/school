@@ -9,7 +9,7 @@ body{font-size:12px;font-family:Arial,Verdana, Helvetica, sans-serif;word-break:
 .c2{color:#FF6600;}
 .h1{height:8px;overflow:hidden;}
 /* 顶部菜单 */
-.top{width:980px;height:37px;text-align:left;line-height:30px;margin:0 auto;background:url(../images/common/sprites_top.png) no-repeat;position:relative;color:#bbb; z-index:10;}
+.top{width:980px;height:37px;text-align:left;line-height:30px;margin:0 auto;position:relative;color:#bbb; z-index:10;}
 .top a{color:#555;}
 .top a:hover{color:#000;text-decoration:underline;}
 .topsl{position:absolute;left:7px;}

@@ -92,7 +92,7 @@ body {
     <td valign="top" style="width: 740px"><table border="0" cellspacing="0" cellpadding="0" style="width: 739px;border-right: #009933 0.1mm solid; border-top: #009933 0.1mm solid;  border-bottom: #009933 0.1mm solid;">
       <tr>
         <td width="100%" style="font-size: 18px; background-image: url(images/关键字条框.jpg); color: #ffffff; background-repeat: repeat-x; height: 55px" >
-            热门款式</td>
+            热门图书</td>
       </tr>
       
       <tr>
