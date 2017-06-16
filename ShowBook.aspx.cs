@@ -105,6 +105,7 @@ public partial class ShowBook : System.Web.UI.Page
     }
     private void BinderReplay()
     {
+
         int id = int.Parse(Request.QueryString["id"].ToString());
         string sql = "select * from  Comment where BookId=" + id;
         SqlConnection con = new SqlConnection(SqlHelper.connstring);

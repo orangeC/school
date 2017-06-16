@@ -71,7 +71,7 @@ body {
             <tr>
                 <td bgcolor="#f7f6f3" rowspan="6" style="width: 196px; text-align: center">
                     <asp:Image ID="iGPhoto" runat="server" Height="160px" Width="210px" /></td>
-                <td bgcolor="#f7f6f3" colspan="1" style="width: 100px; height: 30px; text-align: left">
+                <td bgcolor="#f7f6f3" colspan="1" style="width: 120px; height: 30px; text-align: left">
                     商品名称：</td>
                 <td bgcolor="#f7f6f3" colspan="1" style="width: 812px; height: 30px" align="left">
                     <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></td>
@@ -119,27 +119,27 @@ body {
             </tr>
             <tr>
                 <td bgcolor="#f7f6f3" colspan="3" style="height: 24px; text-align: right">
-                    <asp:Label ID="Label8" runat="server" ForeColor="Red"></asp:Label>颜色：<asp:DropDownList
-                        ID="DropDownList1" runat="server">
-                        <asp:ListItem>褐色</asp:ListItem>
-                        <asp:ListItem>黑色</asp:ListItem>
-                        <asp:ListItem>白色</asp:ListItem>
-                        <asp:ListItem>红色</asp:ListItem>
-                        <asp:ListItem>绿色</asp:ListItem>
-                        <asp:ListItem>蓝色</asp:ListItem>
-                        <asp:ListItem>其他</asp:ListItem>
-                    </asp:DropDownList>尺码：<asp:DropDownList ID="DropDownList2" runat="server">
-                        <asp:ListItem>36</asp:ListItem>
-                        <asp:ListItem>37</asp:ListItem>
-                        <asp:ListItem>38</asp:ListItem>
-                        <asp:ListItem>39</asp:ListItem>
-                        <asp:ListItem>40</asp:ListItem>
-                        <asp:ListItem>42</asp:ListItem>
-                        <asp:ListItem>41</asp:ListItem>
-                        <asp:ListItem>43</asp:ListItem>
-                        <asp:ListItem>44</asp:ListItem>
-                        <asp:ListItem>45</asp:ListItem>
-                        <asp:ListItem>其他</asp:ListItem>
+                    <asp:Label ID="Label8" runat="server" ForeColor="Red"></asp:Label><asp:DropDownList
+                        ID="DropDownList1" runat="server" style="display: none;">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                    </asp:DropDownList><asp:DropDownList ID="DropDownList2" runat="server" style="display: none;">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
                     </asp:DropDownList>购买数量：<asp:TextBox ID="TextBox1" runat="server" Width="101px">1</asp:TextBox>
                     <asp:Button ID="btnShop" runat="server" Height="23px" OnClick="btnShop_Click" Text="购买"
                         Width="60px" />

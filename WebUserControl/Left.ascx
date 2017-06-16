@@ -29,24 +29,24 @@
           <table align="center" bgcolor="#e3ebfe" border="0" cellpadding="2" cellspacing="1"
               style="margin-top: 8px" width="98%">
               <tr bgcolor="#e7e7e7">
-                  <td align="left" colspan="10" height="24">
+                  <td align="left" colspan="10" height="40">
                       图书名称：<asp:TextBox ID="txtName" runat="server" Style="border-right: #ffcc00 1px solid;
                           border-top: #ffcc00 1px solid; border-left: #ffcc00 1px solid; border-bottom: #ffcc00 1px solid"
                           Width="100px"></asp:TextBox></td>
               </tr>
               <tr bgcolor="#e7e7e7">
-                  <td align="left" colspan="10" height="24">
+                  <td align="left" colspan="10" height="40">
                       图书类别：<asp:DropDownList ID="DropDownList1" runat="server" Width="98px">
                       </asp:DropDownList></td>
               </tr>
               <tr bgcolor="#e7e7e7">
-                  <td align="left" colspan="10" style="height: 24px">
-                      销售单价：从<asp:TextBox ID="BookMoney1" runat="server" Width="90px"></asp:TextBox><br />
-                      销售单价到：<asp:TextBox ID="BookMoney2" runat="server" Width="87px"></asp:TextBox><br />
-                      输入价格范围</td>
+                  <td align="left" colspan="10" style="display: none;">
+                      <asp:TextBox ID="BookMoney1" runat="server" Width="90px"></asp:TextBox><br />
+                      <asp:TextBox ID="BookMoney2" runat="server" Width="87px"></asp:TextBox><br />
+                      </td>
               </tr>
               <tr bgcolor="#e7e7e7">
-                  <td align="left" colspan="10" height="24">
+                  <td align="left" colspan="10" height="40">
                       <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="搜索" /></td>
               </tr>
           </table>

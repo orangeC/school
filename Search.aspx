@@ -75,9 +75,9 @@ body {
                     </asp:DropDownList></td>
             </tr>
             <tr bgcolor="#e7e7e7">
-                <td colspan="10" style="height: 24px" align="left">
-                    销售单价：<asp:TextBox ID="BookMoney1" runat="server" Width="136px"></asp:TextBox>到<asp:TextBox
-                        ID="BookMoney2" runat="server" Width="136px"></asp:TextBox>输入价格范围</td>
+                <td colspan="10" style="display: none" align="left">
+                    <asp:TextBox ID="BookMoney1" runat="server" Width="136px"></asp:TextBox><asp:TextBox
+                        ID="BookMoney2" runat="server" Width="136px"></asp:TextBox></td>
             </tr>
             <tr bgcolor="#e7e7e7">
                 <td align="left" colspan="10" height="24">
