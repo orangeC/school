@@ -69,18 +69,18 @@ body {
             <tr>
                 <td align="center" colspan="3" style=" width: 916px;
                     color: #ff9966; height: 5px">
-                    收货人信息</td>
+                    收货人选择</td>
             </tr>
             <tr>
                 <td align="left" colspan="3" style="width: 916px; color: #ff9966; height: 5px">
                     收 件 人：<asp:Label ID="Label2" runat="server"></asp:Label></td>
             </tr>
-            <tr>
-                <td align="left" colspan="3" style="width: 916px; color: #ff9966; height: 5px">
+            <tr style="display: none;">
+                <td align="left" colspan="3" style="display: none; width: 916px; color: #ff9966; height: 5px">
                     收货地址：<asp:Label ID="Label3" runat="server"></asp:Label></td>
             </tr>
-            <tr>
-                <td align="left" colspan="3" style="width: 916px; color: #ff9966; height: 5px">
+            <tr style="display: none;">
+                <td align="left" colspan="3" style="display: none; width: 916px; color: #ff9966; height: 5px">
                     联系电话：<asp:Label ID="Label4" runat="server"></asp:Label></td>
             </tr>
             <tr>

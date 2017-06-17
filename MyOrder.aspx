@@ -70,6 +70,13 @@ body {
             PageSize="8" Width="748px" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px">
             <RowStyle BackColor="#F7F7DE" />
             <Columns>
+                <asp:TemplateField HeaderText="">
+                    <ItemTemplate>
+                        <asp:Label ID="Yanse" runat="server" Text='<%# Bind("Yanse") %>' Width="0px"></asp:Label>
+                    </ItemTemplate>
+                    <HeaderStyle Width="0px" />
+                    
+                      </asp:TemplateField>
                 <asp:TemplateField HeaderText="订单编号">
                     <ItemTemplate>
                         <asp:Label ID="OrderID" runat="server" Text='<%# Bind("OrderID") %>' Width="87px"></asp:Label>
@@ -96,20 +103,7 @@ body {
                         <asp:Label ID="Label1" runat="server" Text='<%# Bind("shuliang") %>' Width="87px"></asp:Label>
                     </ItemTemplate>
                     <HeaderStyle Width="90px" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="颜色">
-                    <ItemTemplate>
-                        <asp:Label ID="Yanse" runat="server" Text='<%# Bind("Yanse") %>' Width="67px"></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle Width="90px" />
-                    
-                      </asp:TemplateField>
-                    <asp:TemplateField HeaderText="尺码">
-                    <ItemTemplate>
-                        <asp:Label ID="chiMa" runat="server" Text='<%# Bind("chiMa") %>' Width="67px"></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle Width="90px" />
-                </asp:TemplateField>
+                </asp:TemplateField>           
            
                 <asp:TemplateField HeaderText="订单状态">
                     <ItemTemplate>
@@ -125,6 +119,7 @@ body {
                     </ItemTemplate>
                     <HeaderStyle Width="90px" />
                 </asp:TemplateField>
+                
              
                 <asp:HyperLinkField DataNavigateUrlFields="OrderID" DataNavigateUrlFormatString="OrderChk.aspx?OrderID={0}"
                     HeaderText="确认收货" Text="确认收货">
@@ -134,7 +129,12 @@ body {
                     HeaderText="评价" Text="评价">
                     <ControlStyle Font-Underline="False" ForeColor="Black" />
                 </asp:HyperLinkField>
-           
+            <asp:TemplateField HeaderText="">
+                    <ItemTemplate>
+                        <asp:Label ID="chiMa" runat="server" Text='<%# Bind("chiMa") %>' Width="0px"></asp:Label>
+                    </ItemTemplate>
+                    <HeaderStyle Width="0px" />
+                </asp:TemplateField>
             </Columns>
             <FooterStyle BackColor="#CCCC99" />
             <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />

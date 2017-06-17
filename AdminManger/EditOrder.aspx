@@ -66,8 +66,8 @@
                             <asp:BoundField DataField="BookName" HeaderText="商品名称" />
                             <asp:BoundField DataField="BookPrice" HeaderText="商品价格" />
                             
-                                  <asp:BoundField DataField="Yanse" HeaderText="商品名称" />
-                            <asp:BoundField DataField="chiMa" HeaderText="尺码" />
+                                  <asp:BoundField DataField="Yanse" HeaderText="付款方式" />
+                            <asp:BoundField DataField="chiMa" HeaderText="送货方式" />
                             
                             
                             <asp:BoundField DataField="OrderDate" HeaderText="订单日期" />
