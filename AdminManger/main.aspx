@@ -39,7 +39,7 @@
   <tr bgcolor="#FFFFFF">
     <td height="32">
         系统名称：</td>
-    <td><u>网上书店开发与设计</u></td>
+    <td><u>网上书店系统</u></td>
   </tr>
 </table>
     </div>
